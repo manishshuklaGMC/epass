@@ -1,3 +1,16 @@
+Epass(Anumati) is an open source software, which was developed to help various government authorities authorize 
+individuals for specific activities during covid restrictions.
+It supports requesting for individual passes or bulk passes for 
+corporates. The passes can be digitally verified by enforcement authorities.
+
+
+We thank Egov foundation for taking ahead this project to production by deploying, 
+maintaining and further developing over it.  
+
+Complete story of making: https://pn.ispirt.in/author/tanuj-bhojwani/
+
+
+
 Dependencies:
 
 1. Redis
@@ -50,9 +63,11 @@ To add a new admin for a state use the api https://{{host}}/createAdminAccount g
 
 
 
-
-Contributors:
+Contributors (backend):
 1. Manish Shukla
 2. Mayank Natani
 3. Vibhav Shrivastava
+
+Contributors (Product):
+1. Sudhanshu Shekhar
 
