@@ -1,3 +1,4 @@
+# Purpose
 Epass(Anumati) is an open source software, which was developed to help various government authorities authorize 
 individuals for specific activities during covid restrictions.
 It supports requesting for individual passes or bulk passes for 
@@ -11,7 +12,7 @@ Complete story of making: https://pn.ispirt.in/author/tanuj-bhojwani/
 
 
 
-Dependencies:
+# Dependencies:
 
 1. Redis
 2. Kafka
@@ -19,7 +20,7 @@ Dependencies:
 4. Elasticsearch + logstash 
 
 
-SSL certificate:
+## SSL certificate:
 Generate the certificate using https://certbot.eff.org/lets-encrypt/ubuntubionic-apache
 Keystore.p12
 
@@ -33,7 +34,7 @@ openssl dsa -in privatekey -pubout -outform DER -out public_key.der
 openssl pkcs8 -topk8 -inform PEM -outform DER -in privatekey -out private_key.der -nocrypt
 
 
-Running the code:
+## Running the code:
 
 mvn -e spring-boot:run
 
@@ -42,9 +43,10 @@ or
 mvn -Dmaven.test.skip=true package and then run java -jar target/ecurfew-1.0-SNAPSHOT.jar
 
 
-Postman:https://www.getpostman.com/collections/70d9457dcb51b81deeae
+## Postman:
+https://www.getpostman.com/collections/70d9457dcb51b81deeae
 
-On-boarding a new state:
+## On-boarding a new state:
 https://{{host}}/addState
 {
     "authToken":”token",
@@ -63,11 +65,11 @@ To add a new admin for a state use the api https://{{host}}/createAdminAccount g
 
 
 
-Contributors (backend):
+# Contributors (backend):
 1. Manish Shukla
 2. Mayank Natani
 3. Vibhav Shrivastava
 
-Contributors (Product):
+# Contributors (Product):
 1. Sudhanshu Shekhar
 
